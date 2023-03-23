@@ -35,6 +35,7 @@ namespace SlendertubbiesChecker
             server_icon.Source = null;
             var networkFunctions = new LauncherNetworkFunctions();
             bool bIsServerAvaliable = networkFunctions.CanConnectToServer();
+            //Can acces server?
             if (bIsServerAvaliable)
             {
                 server_icon.Source = new BitmapImage(new Uri("Images/check_icon.png", UriKind.Relative));
@@ -43,7 +44,7 @@ namespace SlendertubbiesChecker
             {
                 server_icon.Source = new BitmapImage(new Uri("Images/x_icon.png", UriKind.Relative));
             }
-            
+            //Set icons
             string LocalGameVersion = "Invalid";
             LocalGameVersion = LauncherFilesOperations.CheckLocalVersion("Slendertubbies/TubbyLauncher/LauncherData/gameversion.txt");
             string InternetGameVersion = LauncherNetworkFunctions.ReadTextFromUrl("http://leafq.online/Sebastian/Slendertubbies/Build/gameversion.txt");
@@ -72,7 +73,7 @@ namespace SlendertubbiesChecker
                 game_files_icon.Source = new BitmapImage(new Uri("Images/x_icon.png", UriKind.Relative));
             }
 
-            // Poczekaj 3 sekundy przed wykonaniem kodu
+            // Waits 3 seconds
             Dispatcher.InvokeAsync(() =>
             {
                 
