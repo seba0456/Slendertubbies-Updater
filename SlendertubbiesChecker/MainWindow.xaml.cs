@@ -73,13 +73,13 @@ namespace SlendertubbiesChecker
                 game_files_icon.Source = new BitmapImage(new Uri("Images/x_icon.png", UriKind.Relative));
             }
 
-            // Waits 3 seconds
+            // Waits 3.5 seconds
             Dispatcher.InvokeAsync(() =>
             {
                 
 
 
-                Thread.Sleep(3000);
+                Thread.Sleep(3500);
                 if (bDoesFileExist)
                 {
                     if (LocalGameVersion != InternetGameVersion)

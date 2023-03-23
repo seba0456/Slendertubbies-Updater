@@ -16,6 +16,7 @@
     <None Remove="AplicationWindows\check_icon.png" />
     <None Remove="Functions\start.bat" />
     <None Remove="Images\check_icon.png" />
+    <None Remove="Images\update_icon.png" />
     <None Remove="Images\x_icon.png" />
     <None Remove="multiplayer_Icon.png" />
   </ItemGroup>
@@ -28,6 +29,9 @@
     <Resource Include="AplicationWindows\check_icon.png" />
     <Resource Include="Images\check_icon.png" />
     <Resource Include="Images\multiplayer_Icon.png" />
+    <Resource Include="Images\update_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\x_icon.png" />
   </ItemGroup>
 
