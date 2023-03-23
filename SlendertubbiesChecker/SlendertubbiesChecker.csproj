@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>launcher_icon.ico</ApplicationIcon>
+    <Copyright>Sebastian Legieziński</Copyright>
+    <PackageProjectUrl>https://seba0456.itch.io/slendertubbies</PackageProjectUrl>
+    <Product>Play Slendertubbies</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AplicationWindows\check_icon.png" />
+    <None Remove="Functions\start.bat" />
+    <None Remove="Images\check_icon.png" />
+    <None Remove="Images\x_icon.png" />
+    <None Remove="multiplayer_Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="launcher_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AplicationWindows\check_icon.png" />
+    <Resource Include="Images\check_icon.png" />
+    <Resource Include="Images\multiplayer_Icon.png" />
+    <Resource Include="Images\x_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>
