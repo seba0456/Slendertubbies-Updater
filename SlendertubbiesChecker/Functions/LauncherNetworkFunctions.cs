@@ -27,6 +27,7 @@ namespace SlendertubbiesChecker.Functions
                 return false;
             }
         }
+        //Reads string from Url
         public static string ReadTextFromUrl(string url)
         {
             using (var client = new WebClient())

@@ -9,6 +9,7 @@
     <Copyright>Sebastian Legieziński</Copyright>
     <PackageProjectUrl>https://seba0456.itch.io/slendertubbies</PackageProjectUrl>
     <Product>Play Slendertubbies</Product>
+    <RepositoryUrl>https://github.com/seba0456/Slendertubbies-Updater</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
