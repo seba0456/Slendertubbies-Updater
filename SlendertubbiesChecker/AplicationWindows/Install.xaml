@@ -17,17 +17,18 @@
         </Grid.ColumnDefinitions>
 
         <Image HorizontalAlignment="Center" Height="270" VerticalAlignment="Center" Width="270" Source="../Images/multiplayer_Icon.png" OpacityMask="#4C000000"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,374,0,0" TextWrapping="Wrap" Text="Version 1.0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,354,0,0" TextWrapping="Wrap" Text="Version 1.0" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock Text="Slendertubbies Downloader" Foreground="#FFFDFFE7" TextAlignment="Center" FontSize="28" FontFamily="Cascadia Mono SemiLight" Margin="-24,33,-24,306" Height="NaN" />
         <TextBlock Text="You are using outdated Slendertubbies version. Do you wish to update?" Foreground="#FFFDFFE7" TextAlignment="Center" FontSize="24" FontFamily="Cascadia Mono SemiLight" Margin="12,106,12,182" TextWrapping="Wrap" Height="NaN" />
 
         <StackPanel Margin="0,253,0,0" VerticalAlignment="Top">
-            <Button x:Name="Launch" Background="{x:Null}" Margin="0,0,0,10" Click="Launch_Click">
-                <TextBlock TextWrapping="Wrap" Text="Play game anyway" TextDecorations="Underline" Foreground="#FFFDFFE7" FontFamily="Cascadia Mono" FontSize="18"/>
-            </Button>
             <Button x:Name="Update" Background="{x:Null}" Click="Update_Click">
-                <TextBlock TextWrapping="Wrap" Text="Update game now" TextDecorations="Underline" Foreground="#FFFDFFE7" FontFamily="Cascadia Mono" FontSize="16"/>
+                <TextBlock TextWrapping="Wrap" Text="Update game now" TextDecorations="Underline" Foreground="#FFFDFFE7" FontFamily="Cascadia Mono" FontSize="18"/>
             </Button>
+            <Button x:Name="Launch" Background="{x:Null}" Margin="0,0,0,10" Click="Launch_Click">
+                <TextBlock TextWrapping="Wrap" Text="Play game anyway" TextDecorations="Underline" Foreground="#FFFDFFE7" FontFamily="Cascadia Mono" FontSize="16"/>
+            </Button>
+           
         </StackPanel>
     </Grid>
 </Window>
