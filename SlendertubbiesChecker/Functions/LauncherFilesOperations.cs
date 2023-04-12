@@ -14,8 +14,8 @@ namespace SlendertubbiesChecker.Functions
        
         public static void PlayGame()
         {
-            Directory.SetCurrentDirectory(@"Slendertubbies\TubbyLauncher");
-            Process.Start("TubbyLauncher.exe");
+            Directory.SetCurrentDirectory(@"Slendertubbies");
+            Process.Start("Slendertubbies.exe");
             
         }
         

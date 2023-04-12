@@ -46,7 +46,7 @@ namespace SlendertubbiesChecker
             }
             //Set icons
             string LocalGameVersion = "Invalid";
-            LocalGameVersion = LauncherFilesOperations.CheckLocalVersion("Slendertubbies/TubbyLauncher/LauncherData/gameversion.txt");
+            LocalGameVersion = LauncherFilesOperations.CheckLocalVersion("Slendertubbies/gameversion.txt");
             string InternetGameVersion = LauncherNetworkFunctions.ReadTextFromUrl("http://leafq.online/Sebastian/Slendertubbies/Build/gameversion.txt");
             if (LocalGameVersion == "Invalid")
             {
@@ -63,7 +63,7 @@ namespace SlendertubbiesChecker
                     game_version_icon.Source = new BitmapImage(new Uri("Images/update_icon.png", UriKind.Relative));
                 }
             }
-            bool bDoesFileExist = LauncherFilesOperations.DoesFileExists("Slendertubbies/TubbyLauncher/TubbyLauncher.exe");
+            bool bDoesFileExist = LauncherFilesOperations.DoesFileExists("Slendertubbies/Slendertubbies.exe");
             if (bDoesFileExist)
             {
                 game_files_icon.Source = new BitmapImage(new Uri("Images/check_icon.png", UriKind.Relative));
