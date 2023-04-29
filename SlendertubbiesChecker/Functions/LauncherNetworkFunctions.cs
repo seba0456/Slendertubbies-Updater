@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SlendertubbiesChecker.Functions
 {
@@ -32,7 +33,16 @@ namespace SlendertubbiesChecker.Functions
         {
             using (var client = new WebClient())
             {
-                return client.DownloadString(url);
+                try
+                {
+                    return client.DownloadString(url);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("This program was unable to connect to Slendertubbies servers!", "Critical error!");
+                    return null;
+                }
+
             }
         }
     }

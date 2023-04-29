@@ -19,6 +19,7 @@ using System.IO;
 using SlendertubbiesChecker.AplicationWindows;
 using System.Windows.Threading;
 
+
 namespace SlendertubbiesChecker
 {
     /// <summary>
@@ -43,6 +44,17 @@ namespace SlendertubbiesChecker
             else
             {
                 server_icon.Source = new BitmapImage(new Uri("Images/x_icon.png", UriKind.Relative));
+                try
+                {
+                    LauncherFilesOperations.PlayGame();
+                    System.Windows.Application.Current.Shutdown();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("This program was unable to connect to Slendertubbies servers! Additionally, we are unable to run the game!", "Critical error!"); 
+                    System.Windows.Application.Current.Shutdown();
+                }
+                
             }
             //Set icons
             string LocalGameVersion = "Invalid";
